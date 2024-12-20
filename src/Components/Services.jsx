@@ -10,8 +10,8 @@ const Services = () => {
                 <h1>Revenue Cycle Management Service</h1>
             </div>
 
-            <div className='space-y-10'>
-                <div className='flex justify-between gap-8 px-52'>
+            <div className='space-y-6 max-w-[95%] md:max-w-[85%] lg:max-w-[75%] mx-auto'>
+                <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-10 !gap-4 px-4 md:px-12'>
                     <TransparentCard 
                         imgg={"service1.png"}
                         title={"End-End RCM Services"}

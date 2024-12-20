@@ -7,7 +7,7 @@ const Navbar = () => {
   const [navMenu, setnavMenu] = useState(false);
 
   return (
-    <div className='w-full flex flex-col z-50'> {/* fixed top-0 left-0  */}
+    <nav className='w-full flex flex-col z-50'> {/* fixed top-0 left-0  */}
 
         <div className='bg-[#233a6f] flex justify-between items-center md:px-52 px-2 text-white md:py-1 py-2'>
           <div className='flex items-center gap-1'>
@@ -34,11 +34,11 @@ const Navbar = () => {
             <div className="hidden lg:flex gap-8">
               <div className="flex gap-4 text-black">
                 <ul className="flex items-center gap-6">
-                  <Link className="link">Home</Link>
-                  <Link className="link">Services</Link>
-                  <Link className="link">Rcm solutions</Link>
-                  <Link className="link">About us</Link>
-                  <Link className="link">Blog</Link>
+                  <Link to={''} className="link">Home</Link>
+                  <Link to={''} className="link">Services</Link>
+                  <Link to={'/'} className="link">Rcm solutions</Link>
+                  <Link to={'/about'} className="link">About us</Link>
+                  <Link to={'/blog'} className="link">Blog</Link>
                 </ul>
               </div>
               <div>
@@ -58,15 +58,15 @@ const Navbar = () => {
       {navMenu &&
             <div className="relative mt-[-37px] left-0 w-full bg-black">
               <ul className="flex flex-col">
-                <Link className="nav-link">Home</Link>
+                <Link to={'/'} className="nav-link">Home</Link>
                 <Link className="nav-link">Services</Link>
                 <Link className="nav-link">Rcm solutions</Link>
-                <Link className="nav-link">About us</Link>
-                <Link className="nav-link !border-none">Blog</Link>
+                <Link to={'/about'} className="nav-link">About us</Link>
+                <Link to={'/blog'} className="nav-link !border-none">Blog</Link>
               </ul>
             </div>
           }
-    </div>
+    </nav>
   )
 };
 export default Navbar;

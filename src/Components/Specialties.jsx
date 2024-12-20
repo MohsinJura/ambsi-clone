@@ -13,7 +13,7 @@ const specialties = [
   { name: "Family Practice", icon: '9.png' },
   { name: "General Surgery", icon: '10.png' },
   { name: "Genetics", icon: '11.png' },
-  { name: "Gastroenterology", icon: '12.png' },
+  { name: "Gasterology", icon: '12.png' },
   { name: "Orthopedics", icon: '13.png' },
   { name: "Dermatology", icon: '14.png' },
   { name: "Gynecology", icon: '15.png' },
@@ -21,17 +21,17 @@ const specialties = [
 
 const MedicalSpecialties = () => {
   return (
-    <div className="bg-gray-100 py-10">
+    <section className="bg-gray-100 py-10">
       <h2 className="text-center text-2xl font-bold mb-8">Medical Specialties</h2>
-      <div className="grid grid-cols-8 gap-12 max-w-4xl mx-auto">
+      <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-10 lg:gap-11 max-w-[75%] mx-auto">
         {specialties.map((specialty, index) => (
           <div key={index} className= "flex flex-col items-center justify-center mx-auto">
-            <img src={specialty.icon} alt='icons' className='w-40 h-32' />
+            <img src={specialty.icon} alt='icoons' className='h-24 w-28'/>
             <p className="font-semibold mt-2 text-center">{specialty.name}</p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,8 +4,8 @@ import Card from '../subComponents/Card';
 const CardSection = () => {
     
   return (
-    <div className='h-52 relative bg-[#f0f2f7]'>
-      <div className='flex justify-between gap-4 px-52 absolute -top-24'>
+    <section className='max-w-[70pc] mx-auto'>
+      <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-6 md:gap-3 gap-2'>
       
         <Card 
           icon = {<img src='icon1.png' size={60} color='indigo' />}
@@ -26,7 +26,7 @@ const CardSection = () => {
         />
       
       </div>
-    </div>
+    </section>
   )
 }
 

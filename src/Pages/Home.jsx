@@ -1,32 +1,33 @@
 import React from 'react';
 import Banner from '../Components/Banner';
+import Brands from '../Components/Brands';
 import CardSection from '../Components/CardSection';
-import WorkSection from '../Components/WorkSection';
+import FlexPiCard from '../Components/FlexPiCard';
 import Services from '../Components/Services';
-import AboutUs from '../Components/AboutUs';
+import Specialties from '../Components/Specialties';
 import Testimonial from '../Components/Testimonial';
-import MedicalSpecialties from '../Components/Specialties';
 
 const Home = () => {
   return (
     <div className=''>
-      <Banner 
-        title={'MEDICAL BILLING & RCM SERVICES IN UNITED STATES'}
-        imgPath={'/bg.png'} 
-        />
 
-      <CardSection />
+      <Banner title={'MEDICAL BILLING & RCM SERVICES IN UNITED STATES'} imgPath={'/bg.png'} />
+      
+      <div className='h-44 relative bg-back'>
+          <div className='absolute -top-16 px-60'>
+              <CardSection />
+          </div>
+      </div>
 
       <Services />
 
-      <WorkSection />
+      <Brands />
 
-      <AboutUs />
+      <FlexPiCard title={'Learn more about us'} imgurl={'about-us.png'}/>
 
-      <MedicalSpecialties />
+      <Specialties />
 
       <Testimonial />
-
 
     </div>
   )
