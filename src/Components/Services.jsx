@@ -3,14 +3,12 @@ import TransparentCard from '../subComponents/TransparentCard'
 
 const Services = () => {
   return (
-    <section className='bg-back pb-8 pt-20'>
-        <div className='space-y-14'>
+    <section className='bg-back py-8'>
+        <div className='space-y-10 text-center'>
 
-            <div className='text-center font-bold text-2xl'>
-                <h1>Revenue Cycle Management Service</h1>
-            </div>
+            <h1 className='font-bold text-4xl'>Revenue Cycle Management Service</h1>
 
-            <div className='space-y-6 max-w-[95%] md:max-w-[85%] lg:max-w-[75%] mx-auto'>
+            <div className='space-y-8 max-w-[95%] md:max-w-[85%] lg:max-w-[75%] mx-auto'>
                 <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-10 !gap-4 px-4 md:px-12'>
                     <TransparentCard 
                         imgg={"service1.png"}
@@ -29,10 +27,7 @@ const Services = () => {
                     />
                 </div>
 
-                <div className='text-center'>
-                    <button className='btn-primary'>View All Services</button>
-                </div>
-
+                <button className='btn-primary'>View All Services</button>
             </div>
         
         </div>

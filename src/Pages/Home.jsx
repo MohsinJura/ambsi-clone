@@ -13,7 +13,7 @@ const Home = () => {
 
       <Banner title={'MEDICAL BILLING & RCM SERVICES IN UNITED STATES'} imgPath={'/bg.png'} />
       
-      <div className='h-44 relative bg-back'>
+      <div className='h-64 relative bg-back'>
           <div className='absolute -top-16 px-60'>
               <CardSection />
           </div>

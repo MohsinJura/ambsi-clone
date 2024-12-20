@@ -4,10 +4,10 @@
 
 @layer components {
     .btn-primary {
-      @apply px-10 py-3 text-Bwhite bg-darkred text-sm rounded-sm font-semibold hover:animate-ping;
+      @apply px-10 py-3 text-Bwhite bg-darkred text-sm rounded-sm font-semibold transition-transform duration-300 hover:scale-110;
     }
     .btn-secondary {
-        @apply px-12 py-3.5 text-Bwhite bg-darkred text-small rounded font-semibold;
+        @apply px-12 py-3.5 text-Bwhite bg-darkred text-small rounded font-semibold transition-transform duration-300 hover:scale-110;
     }
     .btn-small {
         @apply px-6 py-2.5 text-Bwhite bg-darkred text-sm font-semibold rounded-sm;
