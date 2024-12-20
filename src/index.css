@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply px-10 py-3 text-Bwhite bg-darkred text-sm rounded-sm font-semibold hover:animate-ping;
+    }
+    .btn-secondary {
+        @apply px-12 py-3.5 uppercase text-Bwhite bg-darkred text-sm rounded-sm font-semibold;
+    }
+    .btn-small {
+        @apply px-6 py-2.5 text-Bwhite bg-darkred text-sm font-semibold rounded-sm;
+    }
+  }

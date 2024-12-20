@@ -1,0 +1,33 @@
+
+.link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #233a6f;
+}
+.nav-link {
+    font-size: 12px ;
+    font-weight: 300;
+    color: white;
+    padding: 13px;
+    text-transform: uppercase;
+    border-bottom: solid 1px;
+}
+.btn {
+    width: fit-content;
+    background: #b42a2a;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: semibold;
+    transform: scale(1.1em);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0px 170px;
+    
+}
