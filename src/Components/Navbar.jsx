@@ -36,7 +36,7 @@ const Navbar = () => {
               <div className="flex gap-4 text-black">
                 <ul className="flex items-center gap-6">
                   <Link to={''} className="link">Home</Link>
-                  {/* <Link to={''} className="link">Services</Link> */}
+                  
                   {/* Services Dropdown */}
                   <li
                     className="link relative cursor-pointer"
@@ -61,7 +61,7 @@ const Navbar = () => {
                         <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
                           Coding Services
                         </li>
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase">
                           Patient Eligibility Verification
                         </li>
                       </ul>
