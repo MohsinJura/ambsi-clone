@@ -14,7 +14,7 @@ const RCMSolution = () => {
             <Banner title={'RCM SOLUTIONS'} imgPath={'/services/s-mb-bg.png'} />
             <FlexPiCard title={'Top Medical Billing Company in United States'} imgurl={'/services/s-mb1.png'} desc={<Content1 />} />
             <Flex_Pic_Btn title={'Our Medical Billing Service offers you'} imgurl={'/services/s-mb2.png'} btnText={'Get Started'}
-                desc={<BulletContent />} imgClass={'w-96 flex justify-end'}  />
+                desc={<BulletContent />} imgClass={'w-96 flex justify-end'} />
             <MedicalSpecialties />
             <Brands />    
         </div>
