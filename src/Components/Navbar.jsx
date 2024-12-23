@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <nav className='w-full flex flex-col z-50'> {/* fixed top-0 left-0  */}
+    <nav className='w-full flex flex-col z-50 shadow'> {/* fixed top-0 left-0  */}
 
         <div className='bg-[#233a6f] flex justify-between items-center md:px-52 px-2 text-white md:py-1 py-2'>
           <div className='flex items-center gap-1'>
@@ -27,15 +27,15 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='flex items-center justify-between md:px-52 px-2 bg-white shadow'>
-          <div className='py-6'>
-            <img src='/logo.png' className=''/>
+        <div className='flex items-center justify-between gap-40 md:gap-80 max-w-7xl mx-auto px-4 bg-white'>
+          <div className='flex items-center min-h-20'>
+            <img src='/logo.png' className='min-h-12 min-w-20'/>
           </div>
           <div className="relative">
             <div className="hidden lg:flex gap-8">
               <div className="flex gap-4 text-black">
-                <ul className="flex items-center gap-6">
-                  <Link to={''} className="link">Home</Link>
+                <ul className="min-w-max flex items-center gap-4">
+                  <Link to={'/'} className="link">Home</Link>
                   
                   {/* Services Dropdown */}
                   <li
@@ -45,30 +45,30 @@ const Navbar = () => {
                   >
                     Services
                     {isServicesOpen && (
-                      <ul className="absolute bg-black text-white w-64 z-50">
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                      <div className="absolute bg-black text-white w-64 z-50 ">
+                        <Link to={'/services/medical-billing'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
                           Medical Billing Service
-                        </li>
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        </Link>
+                        <Link to={'/services/revenue-cycle'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
                           Revenue Cycle Management
-                        </li>
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        </Link>
+                        <Link to={'/services/denial-management'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
                           Denial Management
-                        </li>
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        </Link>
+                        <Link to={'/services/ar-services'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
                           AR Services
-                        </li>
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        </Link>
+                        <Link to={'/services/coding-services'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
                           Coding Services
-                        </li>
-                        <li className="px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase">
+                        </Link>
+                        <Link to={'/services/patient-verification'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase">
                           Patient Eligibility Verification
-                        </li>
-                      </ul>
+                        </Link>
+                      </div>
                     )}
                   </li>
 
-                  <Link to={'/'} className="link">Rcm solutions</Link>
+                  <Link to={'/rcm-solutions'} className="link">Rcm solutions</Link>
                   <Link to={'/about'} className="link">About us</Link>
                   <Link to={'#'} className="link">Blog</Link>
                 </ul>

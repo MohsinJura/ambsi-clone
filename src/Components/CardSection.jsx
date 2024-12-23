@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../subComponents/Card';
+import Card from './Reuseable/Card';
 
 const CardSection = () => {
     

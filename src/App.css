@@ -1,6 +1,6 @@
 
 .link{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -23,7 +23,6 @@
     font-weight: semibold;
     transform: scale(1.1em);
 }
-
 .row {
     display: flex;
     justify-content: space-between;

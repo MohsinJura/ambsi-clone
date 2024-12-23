@@ -2,7 +2,8 @@ import React from 'react';
 import Banner from '../Components/Banner';
 import Brands from '../Components/Brands';
 import CardSection from '../Components/CardSection';
-import FlexPiCard from '../Components/FlexPiCard';
+import FlexPiCard from '../Components/Reuseable/FlexPiCard';
+import IntroContent from '../Components/Reuseable/IntroContent';
 import Services from '../Components/Services';
 import Specialties from '../Components/Specialties';
 import Testimonial from '../Components/Testimonial';
@@ -24,7 +25,7 @@ const Home = () => {
 
         <Brands />
 
-        <FlexPiCard title={'Learn more about us'} imgurl={'about-us.png'}/>
+        <FlexPiCard title={'Learn more about us'} imgurl={'about-us.png'} desc={<IntroContent />}/>
 
         <Specialties />
 

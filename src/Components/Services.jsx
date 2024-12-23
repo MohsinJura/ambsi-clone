@@ -1,5 +1,5 @@
 import React from 'react'
-import TransparentCard from '../subComponents/TransparentCard'
+import TransparentCard from './Reuseable/TransparentCard'
 
 const Services = () => {
   return (

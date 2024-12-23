@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = ({ title, imgPath }) => {
   return (
@@ -15,7 +16,9 @@ const Banner = ({ title, imgPath }) => {
       {/* Text and Button */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4 sm:px-6 md:px-8">
       <h2 className="text-2xl md:text-4xl font-semibold mb-6 w-96 md:w-[650px] text-center">{title}</h2>
-      <button className="btn-secondary uppercase"> Let's Talk </button>
+      <button className="btn-secondary uppercase">
+        <Link to={'/contact'}>Let's Talk </Link> 
+      </button>
       </div>
     </section>
   );
