@@ -3,7 +3,7 @@ import React from 'react'
 const IntroContent = () => {
   return (
     <section>
-      <p className="text-[14px] leading-loose ">
+      <p className="text-small md:text-[13px] leading-loose">
         Ambsi is recognized as a leading provider of medical billing solutions in the United
         States. In today’s challenging healthcare environment, healthcare organizations need
         an innovative partner to help improve clinical workflows, increase revenue,

@@ -4,8 +4,8 @@ import Card from '../subComponents/Card';
 const CardSection = () => {
     
   return (
-    <section className='max-w-[70pc] mx-auto'>
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-6 md:gap-3 gap-2'>
+    <section>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-6'>
       
         <Card 
           icon = {<img src='icon1.png' size={60} color='indigo' />}

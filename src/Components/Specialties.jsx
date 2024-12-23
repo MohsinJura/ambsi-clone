@@ -21,7 +21,7 @@ const specialties = [
 
 const MedicalSpecialties = () => {
   return (
-    <section className="bg-gray-100 py-10">
+    <section className="w-full">
       <h2 className="text-center text-2xl font-bold mb-8">Medical Specialties</h2>
       <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-10 lg:gap-11 max-w-[75%] mx-auto">
         {specialties.map((specialty, index) => (

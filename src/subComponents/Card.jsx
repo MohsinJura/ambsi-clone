@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({icon, title, description}) => {
   return (
-    <section className=' rounded-3xl bg-white'>
+    <section className='rounded-3xl bg-white'>
       <div className='space-y-6 text-center px-4 py-6 '>
 
         <div className='flex justify-center '> {icon} </div>

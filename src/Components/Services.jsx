@@ -3,13 +3,13 @@ import TransparentCard from '../subComponents/TransparentCard'
 
 const Services = () => {
   return (
-    <section className='bg-back py-8'>
+    <section className='flex justify-center items-center max-w-[72pc] mx-auto'>
         <div className='space-y-10 text-center'>
 
-            <h1 className='font-bold text-4xl'>Revenue Cycle Management Service</h1>
+            <h1 className='font-bold text-2xl md:text-4xl'>Revenue Cycle Management Service</h1>
 
-            <div className='space-y-8 max-w-[95%] md:max-w-[85%] lg:max-w-[75%] mx-auto'>
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-10 !gap-4 px-4 md:px-12'>
+            <div className='space-y-12 px-6'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                     <TransparentCard 
                         imgg={"service1.png"}
                         title={"End-End RCM Services"}
