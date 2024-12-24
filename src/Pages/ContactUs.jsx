@@ -3,13 +3,13 @@ import React from 'react';
 const ContactUs = () => {
   return (
     <section>
-      <div className='p-10'>
+      <div className='px-10 pt-40'>
         <h2 className="text-4xl font-bold mb-4 text-center">Contact Us</h2>
 
-        <div className="flex flex-col md:flex-row justify-center px-10 md:px-24 py-10">
+        <div className="flex flex-col md:flex-row justify-center px-10 md:px-24 py-10 gap-14">
           {/* Left Form Section */}
           <div className="w-full md:w-1/2">
-            <form className="space-y-6 pl-20 pr-2">
+            <form className="space-y-6">
               <input
                 type="text"
                 placeholder="Name*"
@@ -31,7 +31,7 @@ const ContactUs = () => {
                 className="w-full p-1.5 border border-gray-300 rounded-sm placeholder:text-gray-600 text-lg font-lora"
               />
               <select
-                className="w-80 p-2 border border-gray-300 rounded-sm placeholder:text-gray-600 text-lg font-lora"
+                className="w-full p-2 border border-gray-300 rounded-sm text-gray-600 text-lg font-lora"
               >
                 <option>Medical Billing Service</option>
                 <option>Revenue Cyle Management</option>
@@ -59,7 +59,7 @@ const ContactUs = () => {
           </div>
 
           {/* Right Contact Info Section */}
-          <div className="w-full md:w-1/2 space-y-12 pl-14">
+          <div className="w-full md:w-1/2 space-y-12">
             <div className='flex items-center gap-5'>
               <div className='w-16 h-16'>
                 <img src='/call.png'  />

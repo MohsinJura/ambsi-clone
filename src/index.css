@@ -15,4 +15,7 @@
     .content {
       @apply font-sog text-[0.83rem] text-gray-800 leading-6 text-left;
     }
+    .droplink{
+      @apply flex px-4 py-2.5 cursor-pointer text-[12px] text-Bwhite font-extralight uppercase;
+    }
   }

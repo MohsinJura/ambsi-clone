@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <nav className='w-full flex flex-col z-50 shadow'> {/* fixed top-0 left-0  */}
+    <nav className='fixed top-0 left-0 w-full flex flex-col z-50 shadow'> {/* fixed top-0 left-0  */}
 
         <div className='bg-[#233a6f] flex justify-between items-center md:px-52 px-2 text-white md:py-1 py-2'>
           <div className='flex items-center gap-1'>
@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className='flex items-center justify-between gap-40 md:gap-80 max-w-7xl mx-auto px-4 bg-white'>
+        <div className='bg-Bwhite flex justify-between items-center md:px-52 px-4'>
           <div className='flex items-center min-h-20'>
             <img src='/logo.png' className='min-h-12 min-w-20'/>
           </div>
@@ -46,22 +46,22 @@ const Navbar = () => {
                     Services
                     {isServicesOpen && (
                       <div className="absolute bg-black text-white w-64 z-50 ">
-                        <Link to={'/services/medical-billing'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        <Link to={'/services/medical-billing'} className="droplink border-b">
                           Medical Billing Service
                         </Link>
-                        <Link to={'/services/revenue-cycle'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        <Link to={'/services/revenue-cycle'} className="droplink border-b">
                           Revenue Cycle Management
                         </Link>
-                        <Link to={'/services/denial-management'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        <Link to={'/services/denial-management'} className="droplink border-b">
                           Denial Management
                         </Link>
-                        <Link to={'/services/ar-services'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        <Link to={'/services/ar-services'} className="droplink border-b">
                           AR Services
                         </Link>
-                        <Link to={'/services/coding-services'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase border-b">
+                        <Link to={'/services/coding-services'} className="droplink border-b">
                           Coding Services
                         </Link>
-                        <Link to={'/services/patient-verification'} className="flex px-4 py-2.5 cursor-pointer text-[12px] font-extralight uppercase">
+                        <Link to={'/services/patient-verification'} className="droplink">
                           Patient Eligibility Verification
                         </Link>
                       </div>
@@ -88,10 +88,37 @@ const Navbar = () => {
         </div>
 
       {navMenu &&
-            <div className="relative mt-[-37px] left-0 w-full bg-black">
+            <div className="left-0 w-full bg-black">
               <ul className="flex flex-col">
                 <Link to={'/'} className="nav-link">Home</Link>
-                <Link className="nav-link">Services</Link>
+                <li
+                    className="nav-link"
+                    onClick={()=> setIsServicesOpen(!isServicesOpen)}
+                  >
+                    Services
+                    {isServicesOpen && (
+                      <div className="pt-2">
+                        <Link to={'/services/medical-billing'} className="droplink border-b">
+                          Medical Billing Service
+                        </Link>
+                        <Link to={'/services/revenue-cycle'} className="droplink border-b">
+                          Revenue Cycle Management
+                        </Link>
+                        <Link to={'/services/denial-management'} className="droplink border-b">
+                          Denial Management
+                        </Link>
+                        <Link to={'/services/ar-services'} className="droplink border-b">
+                          AR Services
+                        </Link>
+                        <Link to={'/services/coding-services'} className="droplink border-b">
+                          Coding Services
+                        </Link>
+                        <Link to={'/services/patient-verification'} className="droplink">
+                          Patient Eligibility Verification
+                        </Link>
+                      </div>
+                    )}
+                  </li>
                 <Link className="nav-link">Rcm solutions</Link>
                 <Link to={'/about'} className="nav-link">About us</Link>
                 <Link to={"#"} className="nav-link !border-none">Blog</Link>

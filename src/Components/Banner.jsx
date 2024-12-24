@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = ({ title, imgPath }) => {
   return (
-    <section className="relative">
+    <section className="relative pt-40">
       {/* Background Image */}
       <div className="w-screen min-w-fit">
         <img
